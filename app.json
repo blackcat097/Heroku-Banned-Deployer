@@ -1,0 +1,31 @@
+{
+  "name": "Heroku Banned Deployer",
+  "description": "Now you can deploy repos that are banned/blacklisted by heroku 🔥",
+  "keywords": [
+    "telegram",
+    "open",
+    "source",
+    "deployer"
+  ],
+  "env": {
+    "REPO_URL": {
+      "description": "URL of the REPO that you want to deploy.",
+      "value": ""
+    },
+    "START_CMD": {
+      "description": "App Start CMD ( ex : python3 bot.py )",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
