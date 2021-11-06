@@ -2,7 +2,7 @@ apt update && apt upgrade -y
 apt install git -y
 pip3 install -U pip
 cd /
-git clone $REPO_URL Senu_Repo
-cd Senu_Repo
+git clone $REPO_URL Github_Repo
+cd Github_Repo
 pip3 install -U -r requirements.txt
 $START_CMD
